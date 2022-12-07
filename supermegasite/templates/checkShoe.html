@@ -1,0 +1,257 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+      </div>
+        <div class="container-fluid d-flex justify-content-around w-100">
+            <form class="d-flex pb-3 pt-3">
+                <input class="form-control me-1 rounded-pill" type="search" placeholder="Search" aria-label="Search" style="width: 600px">
+                <button class="btn btn-dark rounded-pill" type="submit">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+            </form>
+        </div>
+    </nav>
+
+    <div class="container d-grid w-100">
+        <h4>{{ product.name }}</h4>
+        <h5 style="color: rgba(0,0,0,.5)">{{ product.id }}</h5>
+    </div>
+
+    <div class="container-fluid d-flex justify-content-center w-75">
+        <div class="container thumb-post">
+            <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" height="800px">
+        </div>
+
+        <div class="container d-inline justify-content-end">
+
+            <div class="container d-flex justify-content-between rounded-pill align-items-center" style="background-color: rgba(0,0,0,.05);">
+                <h3 class="ms-5 mt-1">Price: ${{ product.price }} </h3>
+
+                <div class="container d-flex w-auto p-0 m-0 me-5">
+                <div class="row">
+                    <div class="p-0">
+                        <div class="stars">
+                          <form action="">
+                            <input class="star star-5" id="star-5" type="radio" name="star"/>
+                            <label class="star star-5" for="star-5"></label>
+                            <input class="star star-4" id="star-4" type="radio" name="star"/>
+                            <label class="star star-4" for="star-4"></label>
+                            <input class="star star-3" id="star-3" type="radio" name="star"/>
+                            <label class="star star-3" for="star-3"></label>
+                            <input class="star star-2" id="star-2" type="radio" name="star"/>
+                            <label class="star star-2" for="star-2"></label>
+                            <input class="star star-1" id="star-1" type="radio" name="star"/>
+                            <label class="star star-1" for="star-1"></label>
+                          </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            </div>
+            <br>
+            <div class="container d-grid justify-content-between align-items-center">
+                <h4 class="d-flex"  style="color: rgba(0,0,0,.5)">Size:
+                    <select class="form-select ms-2" aria-label="chooseSize">
+                      <option selected>Choose Size</option>
+                      <option value="1">36</option>
+                      <option value="2">38</option>
+                      <option value="3">40</option>
+                        <option value="3">42</option>
+                    </select>
+                </h4>
+
+                <h4 style="color: rgba(0,0,0,.5)">Color: red</h4>
+                <br>
+                <h4 class="d-flex align-items-center" style="color: rgba(0,0,0,.5)"> <i class="fas fa-car-side me-2"></i> Fast delivery</h4>
+                <h4 class="d-flex align-items-center" style="color: rgba(0,0,0,.5)"> <i class="fas fa-gift me-2 "></i> Free discount</h4>
+                <br>
+            </div>
+
+            <div class="d-flex align-items-center justify-content-end">
+                <h4 class="me-3" style="color: rgba(0,0,0,.5)">Amount</h4>
+                      <div class="def-number-input number-input safari_only d-flex align-items-center w-auto">
+                        <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
+                          class="minus"></button>
+                        <input class="quantity fw-bold text-black" min="0" name="quantity" value="1"
+                          type="number">
+                        <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
+                          class="plus"></button>
+                      </div>
+                    </div>
+                <button type="button" class="btn btn-outline-dark rounded-pill w-100 mt-3">to Cart</button>
+
+            <br>
+            <br>
+            <!-- Tabs navs -->
+<ul class="nav nav-tabs nav-justified mb-3" id="ex1" role="tablist">
+  <li class="nav-item" role="presentation">
+    <a
+      class="nav-link active"
+      id="ex3-tab-1"
+      data-mdb-toggle="tab"
+      href="#ex3-tabs-1"
+      role="tab"
+      aria-controls="ex3-tabs-1"
+      aria-selected="true"
+      style="color: black"
+      >Description</a
+    >
+  </li>
+  <li class="nav-item" role="presentation">
+    <a
+      class="nav-link"
+      id="ex3-tab-2"
+      data-mdb-toggle="tab"
+      href="#ex3-tabs-2"
+      role="tab"
+      aria-controls="ex3-tabs-2"
+      aria-selected="false"
+      style="color: black"
+      >Reviews</a
+    >
+  </li>
+
+</ul>
+<!-- Tabs navs -->
+
+<!-- Tabs content -->
+<div class="tab-content" id="ex2-content">
+
+    <!-- tab1 content -->
+  <div
+    class="tab-pane fade show active"
+    id="ex3-tabs-1"
+    role="tabpanel"
+    aria-labelledby="ex3-tab-1"
+  >
+      <p class="desc">
+          <h5 class="d-flex" style="color: rgba(0,0,0,.4);">Upper material
+              <span style="color:rgba(0,0,0,.15); ">
+                  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+                  . . . . . . . .
+              </span>
+                <span style="color:rgba(0,0,0,1); ">
+                  Leather
+              </span>
+          </h5>
+      </p>
+
+      <p class="desc">
+          <h5 class="d-flex" style="color: rgba(0,0,0,.4);">Inner material
+              <span style="color:rgba(0,0,0,.15); ">
+                  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+                  . . . . . . . . . .
+              </span>
+                <span style="color:rgba(0,0,0,1); ">
+                  Wool
+              </span>
+          </h5>
+      </p>
+
+      <p class="desc">
+          <h5 class="d-flex" style="color: rgba(0,0,0,.4);">Sole material
+              <span style="color:rgba(0,0,0,.15); ">
+                  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+                  . . . . . . . . .
+              </span>
+                <span style="color:rgba(0,0,0,1); ">
+                  Polimer
+              </span>
+          </h5>
+      </p>
+
+      <p class="desc">
+          <h5 class="d-flex" style="color: rgba(0,0,0,.4);">Insole material
+              <span style="color:rgba(0,0,0,.15); ">
+                  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+                  . . . . . . . . .
+              </span>
+                <span style="color:rgba(0,0,0,1); ">
+                  Wool
+              </span>
+          </h5>
+      </p>
+
+      <p class="desc">
+          <h5 class="d-flex" style="color: rgba(0,0,0,.4);">Platform height
+              <span style="color:rgba(0,0,0,.15); ">
+                  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+                  . . . . . . . .
+              </span>
+                <span style="color:rgba(0,0,0,1); ">
+                  4mm
+              </span>
+          </h5>
+      </p>
+
+      <p class="desc">
+          <h5 class="d-flex" style="color: rgba(0,0,0,.4);">Color
+              <span style="color:rgba(0,0,0,.15); ">
+                  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+                  . . . . . . . . . . . . . . . . . .
+              </span>
+                <span style="color:rgba(0,0,0,1); ">
+                  Red
+              </span>
+          </h5>
+      </p>
+
+      <p class="desc">
+          <h5 class="d-flex" style="color: rgba(0,0,0,.4);">Color furniture
+              <span style="color:rgba(0,0,0,.15); ">
+                  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+
+              </span>
+                <span style="color:rgba(0,0,0,1); ">
+                  In product color
+              </span>
+          </h5>
+      </p>
+
+      <p class="desc">
+          <h5 class="d-flex" style="color: rgba(0,0,0,.4);">Article
+              <span style="color:rgba(0,0,0,.15); ">
+                  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+                  . . . . . . . . . . . .
+              </span>
+                <span style="color:rgba(0,0,0,1); ">
+                  000000001
+              </span>
+          </h5>
+      </p>
+
+  </div>
+
+    <!-- tab2 content -->
+  <div
+    class="tab-pane fade d-flex justify-content-center align-items-center"
+    id="ex3-tabs-2"
+    role="tabpanel"
+    aria-labelledby="ex3-tab-2"
+  >
+      <div class="">
+          <i class="fab fa-forumbee fa-7x"></i>
+      </div>
+      <div class="ms-5">
+          <h4>Product hasn't any review</h4>
+          <h5 style="font-size: 12px">Leave review about delivered product and other will be happy :)</h5>
+          <button type="button" class="btn btn-outline-dark">Write Review</button>
+      </div>
+  </div>
+
+
+</div>
+<!-- Tabs content -->
+        </div>
+    </div>
+
+{% endblock %}
+
+
+
+
+
+</body>
+</html>

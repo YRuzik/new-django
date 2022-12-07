@@ -1,0 +1,205 @@
+{% extends "base.html" %}
+{% load static %}
+
+    {% block content %}
+      </div>
+        <div class="container-fluid d-flex justify-content-around w-100">
+            <form class="d-flex pb-3 pt-3">
+                <input class="form-control me-1 rounded-pill" type="search" placeholder="Search" aria-label="Search" style="width: 600px">
+                <button class="btn btn-dark rounded-pill" type="submit">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+            </form>
+        </div>
+    </nav>
+
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active thumb-post">
+      <img src="media/img/slider-2.jpg" class="d-block w-100 h-50" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>The biggest discounts</h5>
+        <p>Pick up the shoes of your dreams at a low price</p>
+      </div>
+    </div>
+    <div class="carousel-item thumb-post">
+      <img src="media/img/slider-1.jpg" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Official deliveries</h5>
+        <p>All shoes are original</p>
+      </div>
+    </div>
+    <div class="carousel-item thumb-post">
+      <img src="media/img/slider-3.jpg" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Calamity tozz</h5>
+        <p>New winter collection for you</p>
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"  data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Предыдущий</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"  data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Следующий</span>
+  </button>
+</div>
+
+<div class="ms-0 me-0 w-100 d-grid justify-content-center" >
+    <div class="fs-3 d-flex justify-content-center align-items-center pt-1 pb-3 ">The best offers for you!</div>
+
+    <div class="d-flex justify-content-between" style="width: 1100px">
+        <a href="#" class="text-decoration-none" style="color: black">
+    <div class="card" style="width: 20rem;">
+  <img src="media/img/sport.jpg" class="card-img-top" alt="sport">
+  <div class="card-body">
+    <h5 class="card-title">Sport</h5>
+    <p class="card-text">All for trainings</p>
+  </div>
+    </div>
+    </a>
+
+        <a href="#" class="text-decoration-none" style="color: black">
+    <div class="card" style="width: 20rem;">
+  <img src="media/img/discounts.jpg" class="card-img-top" alt="sport">
+  <div class="card-body">
+    <h5 class="card-title">Discounts up to 50%</h5>
+    <p class="card-text">Final sale</p>
+  </div>
+    </div>
+    </a>
+
+        <a href="#" class="text-decoration-none pb-3" style="color: black">
+    <div class="card" style="width: 20rem;">
+  <img src="media/img/premium.jpg" class="card-img-top" alt="sport">
+  <div class="card-body">
+    <h5 class="card-title">Premium</h5>
+    <p class="card-text">The best shoes</p>
+  </div>
+    </div>
+    </a>
+    </div>
+
+</div>
+
+    <div class="container">
+        <div class="container-fluid d-flex ms-5 ps-5 pt-5">
+            <h2 class="">Shoes</h2>
+            <h5 class="pt-2 mt-1 ms-3" style="color: gray">Bestsellers</h5>
+        </div>
+
+        <div class="container-fluid ms-5 ps-5 pt-3">
+            <figure class="figure">
+            <img src="media/img/bestsellers.png" class="figure-img img-fluid rounded" alt="..." style="width: 200px">
+            <figcaption class="figure-caption fs-5 fw-bold ms-5 ps-3" style="color: black">~500$</figcaption>
+            </figure>
+
+            <figure class="figure ps-3">
+            <img src="media/img/bestsellers-2.png" class="figure-img img-fluid rounded" alt="..." style="width: 200px">
+            <figcaption class="figure-caption fs-5 fw-bold ms-5 ps-3" style="color: black">~300$</figcaption>
+            </figure>
+
+            <figure class="figure ps-3">
+            <img src="media/img/bestsellers-3.png" class="figure-img img-fluid rounded" alt="..." style="width: 200px">
+            <figcaption class="figure-caption fs-5 fw-bold ms-5 ps-3" style="color: black">~250$</figcaption>
+            </figure>
+
+            <figure class="figure ps-3">
+            <img src="media/img/bestsellers-4.png" class="figure-img img-fluid rounded" alt="..." style="width: 200px">
+            <figcaption class="figure-caption fs-5 fw-bold ms-5 ps-3" style="color: black">~350$</figcaption>
+            </figure>
+
+            <figure class="figure ps-3">
+            <img src="media/img/bestsellers-5.png" class="figure-img img-fluid rounded" alt="..." style="width: 200px">
+            <figcaption class="figure-caption fs-5 fw-bold ms-5 ps-3" style="color: black">~400$</figcaption>
+            </figure>
+        </div>
+    </div>
+
+    <div class="container d-grid justify-content-center">
+        <div class="container-fluid d-flex pt-5 pb-2">
+            <h2 class="">Actual</h2>
+        </div>
+
+        <div class="d-flex justify-content-between " style="width: 1100px">
+        <a href="actual.html" class="text-decoration-none" style="color: black">
+    <div class="card" style="width: 20rem;">
+  <img src="media/img/actual-1.jpg" class="card-img-top" alt="sport">
+  <div class="card-body">
+    <h5 class="card-title">Black and White</h5>
+    <p class="card-text">The most actual colors</p>
+  </div>
+    </div>
+    </a>
+
+        <a href="#" class="text-decoration-none" style="color: black">
+    <div class="card" style="width: 20rem;">
+  <img src="media/img/actual-2.jpg" class="card-img-top" alt="sport">
+  <div class="card-body">
+    <h5 class="card-title">Sport outfit</h5>
+    <p class="card-text">What shoes take for sport outfit</p>
+  </div>
+    </div>
+    </a>
+
+        <a href="#" class="text-decoration-none pb-3" style="color: black">
+    <div class="card" style="width: 20rem;">
+  <img src="media/img/actual-3.jpg" class="card-img-top" alt="sport">
+  <div class="card-body">
+    <h5 class="card-title">Trends</h5>
+    <p class="card-text">The most popular shoes</p>
+  </div>
+    </div>
+    </a>
+    </div>
+
+
+
+        <div class="d-flex justify-content-between pt-4" style="width: 1100px">
+        <a href="#" class="text-decoration-none" style="color: black">
+    <figure class="figure">
+            <img src="media/img/actual-4.jpg" class="figure-img img-fluid rounded" alt="..." style="width: 257px">
+            <figcaption class="figure-caption fs-5 fw-bold" style="color: black">Gift Certificate</figcaption>
+            <p class="card-text">Congratulate from home</p>
+    </figure>
+    </a>
+
+        <a href="#" class="text-decoration-none" style="color: black">
+    <figure class="figure">
+            <img src="media/img/actual-5.jpg" class="figure-img img-fluid rounded" alt="..." style="width: 257px">
+            <figcaption class="figure-caption fs-5 fw-bold" style="color: black">Define your style</figcaption>
+            <p class="card-text">Figure it out with us</p>
+            </figure>
+    </a>
+
+        <a href="#" class="text-decoration-none pb-3" style="color: black">
+    <figure class="figure">
+            <img src="media/img/aactual-6.jpg" class="figure-img img-fluid rounded" alt="..." style="width: 257px">
+            <figcaption class="figure-caption fs-5 fw-bold" style="color: black">Why Nike is popular?</figcaption>
+            <p class="card-text">A little about the history</p>
+            </figure>
+    </a>
+
+            <a href="#" class="text-decoration-none pb-3 " style="color: black">
+    <figure class="figure">
+            <img src="media/img/actual-7.jpg" class="figure-img img-fluid rounded" alt="..." style="width: 257px">
+            <figcaption class="figure-caption fs-5 fw-bold" style="color: black">Color variations</figcaption>
+            <p class="card-text">Check the right now</p>
+    </figure>
+    </a>
+    </div>
+
+    </div>
+    {% endblock %}
+
+
+
+</body>
+</html>
